@@ -1,0 +1,54 @@
+name: rca
+description: mobile app test application.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.12.0+4
+  json_annotation: ^3.0.1
+  json_serializable: ^3.2.5
+  flutter_screenutil: ^1.0.2
+  flutter_secure_storage: ^3.3.1+1
+  cupertino_icons: ^0.1.3
+  shared_preferences: ^0.5.7+1
+
+dev_dependencies:
+  flutter_launcher_icons: "^0.7.3"
+  flutter_launcher_name: "^0.0.1"
+  flutter_test:
+    sdk: flutter
+  flutter_driver:
+    sdk: flutter
+
+# The following section is specific to Flutter.
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/backgrounds/
+    - assets/backgrounds/2.0x/
+    - assets/backgrounds/3.0x/
+    - assets/icons/
+    - assets/icons/2.0x/
+    - assets/icons/3.0x/
+
+  fonts:
+    - family: Lato
+      fonts:
+        - asset: fonts/Lato-Regular.ttf
+        - asset: fonts/Lato-Bold.ttf
+
+# set app name: `flutter pub run flutter_launcher_name:main -f pubspec.yaml`
+flutter_launcher_name:
+  name: "Aerial test"
+
+# set launcher icon: `flutter pub run flutter_icons:main -f pubspec.yaml`
+flutter_icons:
+  image_path: "assets/icons/launcher.png"
+  adaptive_icon_background: "#ffffff"
+  android: true
+  ios: true

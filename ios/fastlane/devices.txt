@@ -1,0 +1,8 @@
+Device ID	Device Name	Device Platform
+00008030-0009499221BA802E	FlorentIPhone	iPhone
+cdf8a0dccd36c49cfae1293f68729694f9f87aa3	LoicIPhone	iPhone
+37e14d3a78f585ccb78a3bb5ea4ec1d520381bcf	FrancisiPhone	iPhone
+6b8d11d676acedb48338ecf1ab9c2efcb731604a	PatrickIphone	iPhone
+00008030-001868a81aa2802e	ViswanathIphone	iPhone
+6794a448c41a486e4054abd0e71d24d972ceed06	MarkIphone	iPhone
+dd797e9e15434e1c52a8ea3b5a271ee2147a2aff	AurelienIphone	iPhone

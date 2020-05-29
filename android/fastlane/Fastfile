@@ -1,0 +1,37 @@
+default_platform(:android)
+
+platform :android do
+
+  desc "Push into app distribution firebase"
+  lane :beta do
+    commit = last_git_commit
+
+    firebase_app_distribution(
+      app: ENV['APP_ID_ANDROID'],
+      groups_file: "./fastlane/groups.txt",
+      release_notes: commit[:message],
+      firebase_cli_token: ENV['FIREBASE_TOKEN'],
+      apk_path: "#{ENV['FCI_BUILD_OUTPUT_DIR']}/app-profile.apk"
+    )
+    slack(
+      message: "App successfully released!",
+      slack_url: ENV['SLACK_URL'],
+      payload: {
+        "Build Date" => Time.new.to_s,
+      },
+      default_payloads: [:test_result, :git_author, :last_git_commit, :git_branch],
+      attachment_properties: {
+        fields: [
+          {
+            title: "Build number",
+            value: ENV["BUILD_NUMBER"],
+          },
+          {
+            title: "TYPE",
+            value: "ANDROID"
+          }
+        ]
+      }
+    )
+  end
+end
