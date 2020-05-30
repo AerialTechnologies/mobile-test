@@ -38,7 +38,7 @@ Now the rules are defined, let's complete the tasks.
 
 ## Let's work
 
-The target of this test is to implement the home screen from [https://www.figma.com/file/5JETGT5KzzNNMvRlCvXnEG/Aerial-Mobile-test?node-id=0%3A1](figma)
+The target of this test is to implement the home screen from [Figma](https://www.figma.com/file/5JETGT5KzzNNMvRlCvXnEG/Aerial-Mobile-test?node-id=0%3A1)
 
 ### Information
 
