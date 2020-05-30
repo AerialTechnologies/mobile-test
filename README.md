@@ -1,6 +1,5 @@
 # Aerial Mobile App Test
 
-
 ## Let's setup
 
 ### Project install
@@ -20,24 +19,22 @@
 - The cmd flutter is not working: you flutter sdk path is not exported or is not the good one
 - Your app doesn't work well: clean your build cached with flutter clean
 - Something went wrong with your XCode or iOS simulator:
-    - Your XCode or simulator is not up to date
-    - On XCode, check your signing team, it should be Aerial Technologies Inc.
-    - On XCode, check your signing bundle identifier, it should be ai.aerial.remotecare
-
+  - Your XCode or simulator is not up to date
+  - On XCode, check your provisioning profile, it should be `none`
+  - On XCode, check your signing bundle identifier, it should be `ai.aerial.rca`
 
 ## Let's start
 
 - You have one hour to finish the tasks below
 - Don't worry if everything is not complete at the end
 - Before starting we let you 10 minute with us to:
-    - Make a quick overview of the code
-    - Ask any question you have in mind about the code or the exercice
+  - Make an overview of the code
+  - Ask any question you have in mind about the code or the exercice
 - After this first period of 10 minutes, we will let you work:
-    - Google should be your best friend if you have question
-    - Feel free to indicate that your are block, we will help you
+  - Google should be your best friend if you have question
+  - Feel free to indicate your are blocked, we will help you
 
 Now the rules are defined, let's complete the tasks.
-
 
 ## Let's work
 
@@ -45,13 +42,14 @@ The target of this test is to implement the home screen from [https://www.figma.
 
 ### Information
 
-- account_user: `mobile.test.hiring@aerial.ai`
+- account_email: `mobile.test.hiring@aerial.ai`
 - account_password: provided by Loïc
 - serial: `80029C3D4C21`
 - group_id: `f0ba8cf5-425a-450d-889d-bab19a9a625e`
 
 - To know if the house is active or not use the endpoint `GET /group/{group_id}/activity/isActive`
 - The success payload you will receive should be:
+
 ```JSON
 {
   "code": Int,
@@ -59,7 +57,9 @@ The target of this test is to implement the home screen from [https://www.figma.
   "isActive": bool
 }
 ```
+
 - The error payload you will receive should be:
+
 ```JSON
 {
   "code": Int,
@@ -83,12 +83,14 @@ The target of this test is to implement the home screen from [https://www.figma.
 ### Integration
 
 1. Header:
+
 - The header part should be in a top fixed position
 - The elements should react according the `isActive` status
 - The response should be updated every 5 seconds
 - In case of error, just print a consistent debug in your console
 
 2. Cards:
+
 - The card list should be scroll
 - Every `isActive` changement should create a new card with the timestamp
 - The response should be updated every 5 seconds

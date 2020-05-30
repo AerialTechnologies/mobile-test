@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
+options: "eb601cec3481099e1be9168565ae8736"
+build_time: [1590839552, 978270000]
+inputs:
+  "/Users/loicfuentes/Projects/aerial/mobile-test/ios/Runner/AppDelegate.swift": [1589921308, 641619205]
