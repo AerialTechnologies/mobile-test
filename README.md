@@ -1,6 +1,7 @@
 # Aerial Mobile App Test
 
-## Let's start
+
+## Let's setup
 
 ### Project install
 
@@ -23,16 +24,8 @@
     - On XCode, check your signing team, it should be Aerial Technologies Inc.
     - On XCode, check your signing bundle identifier, it should be ai.aerial.remotecare
 
-### App test info
 
-account_user: `mobile.test.hiring@gmail.com`
-account_password: provide by Loïc
-serial: `80029C3D4C21`
-group_id: `f0ba8cf5-425a-450d-889d-bab19a9a625e`
-
-## Let's work
-
-### Rules
+## Let's start
 
 - You have one hour to finish the tasks below
 - Don't worry if everything is not complete at the end
@@ -45,19 +38,58 @@ group_id: `f0ba8cf5-425a-450d-889d-bab19a9a625e`
 
 Now the rules are defined, let's complete the tasks.
 
-### 1. Clean
+
+## Let's work
+
+The target of this test is to implement the home screen from [https://www.figma.com/file/5JETGT5KzzNNMvRlCvXnEG/Aerial-Mobile-test?node-id=0%3A1](figma)
+
+### Information
+
+- account_user: `mobile.test.hiring@aerial.ai`
+- account_password: provided by Loïc
+- serial: `80029C3D4C21`
+- group_id: `f0ba8cf5-425a-450d-889d-bab19a9a625e`
+
+- To know if the house is active or not use the endpoint `GET /group/{group_id}/activity/isActive`
+- The success payload you will receive should be:
+```JSON
+{
+  "code": Int,
+  "type": String,
+  "isActive": bool
+}
+```
+- The error payload you will receive should be:
+```JSON
+{
+  "code": Int,
+  "message": String,
+  "type": String,
+  "subtype": String
+}
+```
+
+### Helper
+
+- Every assets needed are available in `/assets/`
+- Provide a responsive page, use `/plugins/responsive/`
+- Don't forget, you already have some informations in the description
+
+### Clean
 
 - Feel free to change/enhance any part of the existing code.
 - Feel free to clean the code format, type, ...
 
-### 2. Implement
+### Integration
 
-- Implement the home screen provided:
-    - Every assets needed are available in `/assets/`
-    - Provide a responsive page, use `/plugins/responsive/`
+1. Header:
+- The header part should be in a top fixed position
+- The elements should react according the `isActive` status
+- The response should be updated every 5 seconds
+- In case of error, just print a consistent debug in your console
 
-### 3. Go further
-
-- Implement the endpoint `GET /house/isActive`:
-    - The payload received should be: ,
-    - handle the response
+2. Cards:
+- The card list should be scroll
+- Every `isActive` changement should create a new card with the timestamp
+- The response should be updated every 5 seconds
+- In case of error, just print a consistent debug in your console
