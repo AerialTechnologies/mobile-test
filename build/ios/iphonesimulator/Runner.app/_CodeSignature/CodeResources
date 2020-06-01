@@ -46,7 +46,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		O4ajFpwuRgdNh7qVbeEcOnAp9ws=
+		o26/N00iVbIe6DADNu2aRscs8xg=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -480,30 +480,6 @@
 		<data>
 		z32dyLOVE4+TKehZcBQlHkxsxKQ=
 		</data>
-		<key>Frameworks/device_info.framework/Info.plist</key>
-		<data>
-		sPW5f5b/aOl1x9cSsMso4ltJj3g=
-		</data>
-		<key>Frameworks/device_info.framework/_CodeSignature/CodeResources</key>
-		<data>
-		7mNLli9C41YQilIeaZajS+5OqIg=
-		</data>
-		<key>Frameworks/device_info.framework/device_info</key>
-		<data>
-		P5lto+wo0KAsk47vMlyW5YCl5sU=
-		</data>
-		<key>Frameworks/flutter_native_timezone.framework/Info.plist</key>
-		<data>
-		miomdll/T1N3yFglAFOUYBo6p5w=
-		</data>
-		<key>Frameworks/flutter_native_timezone.framework/_CodeSignature/CodeResources</key>
-		<data>
-		ykaX3gjd7m4mf0jfLTku3pOPugg=
-		</data>
-		<key>Frameworks/flutter_native_timezone.framework/flutter_native_timezone</key>
-		<data>
-		xLkUl3vBiLLahm4O1/TjchHUMtw=
-		</data>
 		<key>Frameworks/flutter_secure_storage.framework/Info.plist</key>
 		<data>
 		09BWXxAeM/e1t8oh0K5AKWrPyRg=
@@ -514,7 +490,7 @@
 		</data>
 		<key>Frameworks/flutter_secure_storage.framework/flutter_secure_storage</key>
 		<data>
-		lVWJjUwP84kHxSdWS8uEvFMkNfc=
+		mlxlDcpOapmYfoZy4YbU6c5d7Pk=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
@@ -544,18 +520,6 @@
 		<data>
 		W4v+YlroD8+v27M4zKa/3r9eqdA=
 		</data>
-		<key>Frameworks/package_info.framework/Info.plist</key>
-		<data>
-		2z5IgSzasL5CPTiZzyA7xEApiAs=
-		</data>
-		<key>Frameworks/package_info.framework/_CodeSignature/CodeResources</key>
-		<data>
-		t84tFFMRVNO8dn5FT79GoDfn83w=
-		</data>
-		<key>Frameworks/package_info.framework/package_info</key>
-		<data>
-		mFSOxX4g+LePJoXbsEIiC6vJe2Y=
-		</data>
 		<key>Frameworks/shared_preferences.framework/Info.plist</key>
 		<data>
 		MKdjf7NJdAKGOGDvfkLO8Unoga4=
@@ -566,19 +530,7 @@
 		</data>
 		<key>Frameworks/shared_preferences.framework/shared_preferences</key>
 		<data>
-		jIyiqqaIG6AUDoq/MIKAwqviwBY=
-		</data>
-		<key>Frameworks/wifi_iot.framework/Info.plist</key>
-		<data>
-		nNgTayddBdiF6DFI0jvOKhI50OM=
-		</data>
-		<key>Frameworks/wifi_iot.framework/_CodeSignature/CodeResources</key>
-		<data>
-		0+NXJd5uSVACp3YFNULxubuxdkk=
-		</data>
-		<key>Frameworks/wifi_iot.framework/wifi_iot</key>
-		<data>
-		UAlrB+Ec+CklYgrd7sK7M6UxFBw=
+		MpqBPDxfB5qijlvyGLOY94kgTN0=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -705,11 +657,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			O4ajFpwuRgdNh7qVbeEcOnAp9ws=
+			o26/N00iVbIe6DADNu2aRscs8xg=
 			</data>
 			<key>hash2</key>
 			<data>
-			VIcJhBUCL/e8mC/7tSQvPn4z2QOc+K4oI/XMSDx+G3M=
+			RAx/39ijJNGIz/1E6b2+FOqwQVqr2E2tIZmSNioFtik=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -1900,72 +1852,6 @@
 			zdr5Vzvecp4snhYdlNG4xyqroPTCh6TeJWIkNMcEyTE=
 			</data>
 		</dict>
-		<key>Frameworks/device_info.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			sPW5f5b/aOl1x9cSsMso4ltJj3g=
-			</data>
-			<key>hash2</key>
-			<data>
-			hYjBEAcSJfvKzWVS1aV7J4MXfAb2PjF2ZrUU04UCqLg=
-			</data>
-		</dict>
-		<key>Frameworks/device_info.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			7mNLli9C41YQilIeaZajS+5OqIg=
-			</data>
-			<key>hash2</key>
-			<data>
-			pgu/aL8wUqaKPg1AqEoaSxAzibGCzfOxrjUJ1C/+tBM=
-			</data>
-		</dict>
-		<key>Frameworks/device_info.framework/device_info</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			P5lto+wo0KAsk47vMlyW5YCl5sU=
-			</data>
-			<key>hash2</key>
-			<data>
-			dWTlN5AUU6jEw3hAYGlOk0rABhdli2AdpD0uUx1JhaY=
-			</data>
-		</dict>
-		<key>Frameworks/flutter_native_timezone.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			miomdll/T1N3yFglAFOUYBo6p5w=
-			</data>
-			<key>hash2</key>
-			<data>
-			bvmUvOJ5ZF5mbri9DeoWNxYCX2fkx3o5c5wtZy2KMlY=
-			</data>
-		</dict>
-		<key>Frameworks/flutter_native_timezone.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ykaX3gjd7m4mf0jfLTku3pOPugg=
-			</data>
-			<key>hash2</key>
-			<data>
-			NZzANcdvL0FGUQgp8rP3z6KUxDLF819updrKprlqk0o=
-			</data>
-		</dict>
-		<key>Frameworks/flutter_native_timezone.framework/flutter_native_timezone</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			xLkUl3vBiLLahm4O1/TjchHUMtw=
-			</data>
-			<key>hash2</key>
-			<data>
-			x5lLMIk9UPaAgkAM7qtWgKIM2o9F6triSJ8cM3hRzSA=
-			</data>
-		</dict>
 		<key>Frameworks/flutter_secure_storage.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
@@ -1992,11 +1878,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lVWJjUwP84kHxSdWS8uEvFMkNfc=
+			mlxlDcpOapmYfoZy4YbU6c5d7Pk=
 			</data>
 			<key>hash2</key>
 			<data>
-			qNExvNuS05FmNa7DPjVRjq5POYWoF1l7Fh+LuqZKyPg=
+			EO0MH+AqHLgmHrAmEqS1IToYU8Izrhcy4/dPv0RliF0=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
@@ -2076,39 +1962,6 @@
 			zLWBGbdbTQk6chVChX0c8CFwhq8ogd9K00QEU5AufEY=
 			</data>
 		</dict>
-		<key>Frameworks/package_info.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2z5IgSzasL5CPTiZzyA7xEApiAs=
-			</data>
-			<key>hash2</key>
-			<data>
-			+jMN0+pWWqW65ox2p38QMY3X2v4wuEOpb99XdkzOcLI=
-			</data>
-		</dict>
-		<key>Frameworks/package_info.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			t84tFFMRVNO8dn5FT79GoDfn83w=
-			</data>
-			<key>hash2</key>
-			<data>
-			SH9S+ZzaHvwZkR/D3t93X6rQk0x/TYE7P+v/6Hz+pjw=
-			</data>
-		</dict>
-		<key>Frameworks/package_info.framework/package_info</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			mFSOxX4g+LePJoXbsEIiC6vJe2Y=
-			</data>
-			<key>hash2</key>
-			<data>
-			989oinLCN9bRBKEcn+7gXeSos1BsEb5uens7ezrceTw=
-			</data>
-		</dict>
 		<key>Frameworks/shared_preferences.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
@@ -2135,44 +1988,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jIyiqqaIG6AUDoq/MIKAwqviwBY=
+			MpqBPDxfB5qijlvyGLOY94kgTN0=
 			</data>
 			<key>hash2</key>
 			<data>
-			erYft1qvoOjR0OWCP/Pq1CgqtUDBZzWmMUOuWNjyEpI=
-			</data>
-		</dict>
-		<key>Frameworks/wifi_iot.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			nNgTayddBdiF6DFI0jvOKhI50OM=
-			</data>
-			<key>hash2</key>
-			<data>
-			JOnaDLYa6jRViu0QNlSGpxwp6Y+EApexy3QcfrMmN3I=
-			</data>
-		</dict>
-		<key>Frameworks/wifi_iot.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			0+NXJd5uSVACp3YFNULxubuxdkk=
-			</data>
-			<key>hash2</key>
-			<data>
-			WgMiCSqC5A9kZiPNUwiZ9MWHbmUBUunJhHuOACKmx7U=
-			</data>
-		</dict>
-		<key>Frameworks/wifi_iot.framework/wifi_iot</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			UAlrB+Ec+CklYgrd7sK7M6UxFBw=
-			</data>
-			<key>hash2</key>
-			<data>
-			PYgiTSJjO4lXUIGo/mSexYkRZx8Hh1xdiCG0bCYCkpI=
+			z05aWM+9g2bLfJphkK27DfAfPS6IJbY3LlWObxad1ys=
 			</data>
 		</dict>
 	</dict>
