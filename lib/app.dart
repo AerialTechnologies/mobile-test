@@ -55,7 +55,7 @@ class InitApp extends StatelessWidget {
         if (authState.hasData)
           return authState.data
               ? HomePage() // valid token
-              : LoginPage(); // invalid token;
+              : HomePage(); // invalid token;
       },
     );
   }
