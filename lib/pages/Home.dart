@@ -1,8 +1,11 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
-import 'package:rca/components/cards.dart';
+
 import 'package:rca/components/contentTiles.dart';
 import 'package:rca/components/texts.dart';
 import 'package:rca/plugins/responsive.dart';
+import 'package:rca/singleton/auth.dart';
 import 'package:rca/singleton/theme.dart';
 
 class HomePage extends StatelessWidget {
@@ -10,12 +13,12 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: AerialTheme().content.colors.lightGrey,
-        body: _buildFrontScreen(context));
+        body: getstream());
   }
 
   Widget _buildFrontScreen(BuildContext context) {
     return Stack(
-      children: <Widget>[_buildMergeScreen(context), _buildHeader()],
+      children: <Widget>[_buildBackgroud(context), _buildHeader()],
     );
   }
 
@@ -51,16 +54,13 @@ class HomePage extends StatelessWidget {
 
   Widget _buildHeader() {
     return Column(
-      children: <Widget>[
-        _buildRadarBackground(),
-        _buildImage(),
-      ],
+      children: <Widget>[_buildImage(), _buildRadarBackground()],
     );
   }
 
   Widget _buildRadarImage() {
     return Container(
-      height: 40 * Responsive.ratioVerticalMultiplier,
+      height: 30 * Responsive.ratioVerticalMultiplier,
       decoration: BoxDecoration(
         image: DecorationImage(
           image: AssetImage('assets/backgrounds/radar_active.png'),
@@ -96,22 +96,17 @@ class HomePage extends StatelessWidget {
   Widget _buildActiveStatus() {
     return Container(
       width: 100,
-      height: 40,
-      child: AerialCard(
-        dark: false,
-        child: AerialCardLabel(
-          color: AerialTheme().content.colors.black,
-          text: "I'm Active",
-        ),
+      height: 100,
+      child: AerialH2(
+        "I'm Active",
+        inverted: true,
       ),
     );
   }
 
   Widget _buildRadarBackground() {
     return Stack(
-      children: <Widget>[
-        _buildRadarImage(),
-      ],
+      children: <Widget>[_buildRadarImage(), _buildHouseIcon()],
     );
   }
 
@@ -135,6 +130,21 @@ class HomePage extends StatelessWidget {
             details: "Details",
             link: "Links",
           );
+        });
+  }
+
+  Widget getstream() {
+    return StreamBuilder(
+        stream: Stream.periodic(Duration(seconds: 5))
+            .asyncMap((event) => Auth().getStatus()),
+        builder: (context, snapshot) {
+          if (snapshot.hasData) {
+            print("DATA: " +
+                json.decode(snapshot.data.body)["isActive"].toString());
+            return _buildFrontScreen(context);
+          } else {
+            return Center(child: CircularProgressIndicator());
+          }
         });
   }
 }

@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:rca/api/constants.dart';
 // INTERNAL
 import 'package:rca/api/service_auth.dart';
 import 'package:rca/models/user.dart';
@@ -17,7 +18,6 @@ class Auth {
 
   Future<bool> checkToken() async {
     bool _isValid = false;
-    return false;
 
     String token = await storage.read(key: "accessToken");
     if (token == null) return _isValid;
@@ -52,5 +52,26 @@ class Auth {
     } catch (e) {
       return false;
     }
+  }
+
+  Future<http.Response> getStatus() async {
+    String url =
+        '$BASE_URL/group/f0ba8cf5-425a-450d-889d-bab19a9a625e/activity/isActive';
+
+    http.Response response = await http.get(
+      url,
+      headers: {
+        "Content-Type": "application/json",
+        'Authorization': 'Bearer $accessToken'
+      },
+    );
+
+    if (response.statusCode >= 400) {
+      var body = json.decode(response.body);
+      print("Responses Status: $body");
+      throw Exception(body);
+    }
+
+    return response;
   }
 }
