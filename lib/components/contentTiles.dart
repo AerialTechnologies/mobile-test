@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rca/components/texts.dart';
+import 'package:rca/singleton/theme.dart';
 
 import 'cards.dart';
 
@@ -27,13 +28,19 @@ class ContentTile extends StatelessWidget {
   Widget _buildComponent() {
     return Column(
       children: <Widget>[
-        Container(
-            child: AerialCard(
-          child: Text(
-            title,
-            style: TextStyle(color: Colors.black),
-          ),
-        )),
+        Align(
+            alignment: Alignment.centerLeft,
+            child: Container(
+                width: 100,
+                height: 40,
+                child: AerialCard(
+                  paddingVertical: 5,
+                  color: AerialTheme().content.colors.notification,
+                  child: Text(
+                    title,
+                    style: TextStyle(color: Colors.black, fontSize: 14),
+                  ),
+                ))),
         Align(alignment: Alignment.centerLeft, child: AerialH2(content)),
         Align(alignment: Alignment.centerLeft, child: AerialH3(details)),
         Align(alignment: Alignment.centerLeft, child: AerialH3(link))

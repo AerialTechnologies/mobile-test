@@ -8,12 +8,14 @@ class AerialCard extends StatelessWidget {
   final double borderRadius;
   final Widget child;
   final bool dark;
+  final Color color;
 
   AerialCard({
     this.borderRadius = 15.0,
     this.paddingHorizontal = 16,
     this.paddingVertical = 25,
     this.dark = false,
+    this.color,
     @required this.child,
   });
 
@@ -24,9 +26,7 @@ class AerialCard extends StatelessWidget {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(this.borderRadius),
       ),
-      color: dark
-          ? AerialTheme().content.colors.darkBase
-          : AerialTheme().content.colors.white,
+      color: this.color,
       child: Container(
         width: double.infinity,
         padding: EdgeInsets.symmetric(
