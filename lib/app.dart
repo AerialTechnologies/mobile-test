@@ -5,7 +5,6 @@ import 'package:rca/pages/Home.dart';
 import 'package:rca/router.dart';
 import 'package:rca/pages/Login.dart';
 import 'package:rca/singleton/auth.dart';
-import 'package:rca/singleton/theme.dart';
 
 class AerialApp extends StatelessWidget {
   @override
@@ -55,7 +54,7 @@ class InitApp extends StatelessWidget {
         if (authState.hasData)
           return authState.data
               ? HomePage() // valid token
-              : LoginPage(); // invalid token;
+              : HomePage(); // invalid token;
       },
     );
   }
