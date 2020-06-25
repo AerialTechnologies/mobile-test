@@ -30,20 +30,22 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
           ),
-          Container(
-            padding: EdgeInsets.symmetric(
-              vertical: 5 * Responsive.ratioVerticalMultiplier,
-              horizontal: 7 * Responsive.ratioHorizontalMultiplier,
-            ),
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(40),
-                topRight: Radius.circular(40),
+          SingleChildScrollView(
+            child: Container(
+              padding: EdgeInsets.symmetric(
+                vertical: 5 * Responsive.ratioVerticalMultiplier,
+                horizontal: 7 * Responsive.ratioHorizontalMultiplier,
               ),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(40),
+                  topRight: Radius.circular(40),
+                ),
+              ),
+              height: 50 * Responsive.ratioVerticalMultiplier,
+              child: LoginForm(),
             ),
-            height: 50 * Responsive.ratioVerticalMultiplier,
-            child: LoginForm(),
           ),
         ],
       ),

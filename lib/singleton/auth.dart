@@ -4,6 +4,7 @@ import 'package:http/http.dart' as http;
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 // INTERNAL
 import 'package:rca/api/service_auth.dart';
+import 'package:rca/api/group_status.dart';
 import 'package:rca/models/user.dart';
 
 class Auth {
@@ -49,6 +50,23 @@ class Auth {
       await storage.write(key: "accessToken", value: accessToken);
       return true;
     } catch (e) {
+      return false;
+    }
+  }
+
+  Future<bool> groupStatus() async {
+    checkToken();
+
+    try {
+      http.Response groupResponse =
+          await FetchHomeGroup().fetchHome(accessToken: accessToken);
+      print(groupResponse);
+      if (groupResponse.statusCode >= 400) {
+        return false;
+      }
+      return true;
+    } catch (e) {
+      print('deu ruim');
       return false;
     }
   }
