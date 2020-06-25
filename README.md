@@ -1,16 +1,8 @@
-# Aerial Mobile App Test
-​
-## Let's setup
-​
-### Project install
-​
-- Fork the project from `https://github.com/AerialTechnologies/mobile-test`
-- Install Flutter and env tool for your OS as per instructions on the Flutter site
-- Setup your editor as per Flutter doc
-- Test your setup by running Flutter doctor
+# Aerial - Technical Mobile Test
 ​
 ## Run the project
 ​
+- Fork the project from `https://github.com/AerialTechnologies/mobile-test`
 - Run `flutter pub get`
 - Run `flutter run` or from vscode `fn + f5`
 ​
@@ -25,12 +17,13 @@
 ​
 ## Let's start
 ​
-- You have one hour to finish the tasks below
+- You have two hours to finish the tasks below
 - Don't worry if everything is not complete at the end
-- Before starting we let you 10 minutes with us to:
+- Before starting we have max 30 minutes with us to:
+  - Point on this test
   - Provide you an overview of the code
   - Ask any question you have in mind about the code or the exercise
-- After this first period of 10 minutes, we will let you work:
+- After this first period, we will let you work:
   - Google should be your best friend if you have question
   - Feel free to let us know if you are blocked, we will help you
 ​
@@ -42,7 +35,7 @@ The objective of this test is to implement the home screen from [Figma](https://
 ​
 ### Information
 ​
-- account_email: `mobile.test.hiring@aerial.ai`
+- account_email: provided by Loïc
 - account_password: provided by Loïc
 - serial: `80029C3D4C21`
 - group_id: `f0ba8cf5-425a-450d-889d-bab19a9a625e`

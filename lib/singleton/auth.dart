@@ -17,7 +17,6 @@ class Auth {
 
   Future<bool> checkToken() async {
     bool _isValid = false;
-    return false;
 
     String token = await storage.read(key: "accessToken");
     if (token == null) return _isValid;
