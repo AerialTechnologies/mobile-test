@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rca/components/cards.dart';
+import 'package:rca/singleton/auth.dart';
 import 'package:rca/singleton/theme.dart';
 import 'package:rca/plugins/responsive.dart';
 
@@ -20,9 +21,7 @@ class HomePage extends StatelessWidget {
           children: [
             Flexible(
               flex: 2,
-              child: StatusBackground(
-                status: true,
-              ),
+              child: StatusBackground(),
             ),
             Flexible(flex: 4, child: ContentTile()),
           ],
@@ -64,9 +63,34 @@ class _ContentTileState extends State<ContentTile> {
   }
 }
 
-class StatusBackground extends StatelessWidget {
-  final bool status;
-  StatusBackground({Key key, this.status}) : super(key: key);
+class StatusBackground extends StatefulWidget {
+  StatusBackground({Key key}) : super(key: key);
+
+  @override
+  _StatusBackgroundState createState() => _StatusBackgroundState();
+}
+
+class _StatusBackgroundState extends State<StatusBackground> {
+  bool _status = false;
+
+  Future _homeStatus() async {
+    setState(() => _status = false);
+
+    // fetch state
+    bool _test = await Auth().checkToken();
+    if (_test) {
+      bool _currentStatus = await Auth().groupStatus();
+      setState(() {
+        _status = _currentStatus;
+      });
+    }
+  }
+
+  @override
+  void didChangeDependencies() {
+    _homeStatus();
+    super.didChangeDependencies();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -74,7 +98,7 @@ class StatusBackground extends StatelessWidget {
       height: 50 * Responsive.ratioVerticalMultiplier,
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: (status)
+          image: (_status)
               ? AssetImage('assets/backgrounds/radar_active.png')
               : AssetImage('assets/backgrounds/radar_inactive.png'),
           fit: BoxFit.cover,
